@@ -1,0 +1,21 @@
+- Der PocketLoox hat 'ne normale RS232-Schnittstelle. Unbedingt auf 
+  PDA-Stecker mit drauflegen.. (is ja noch Platz..)
+
+   9: RS232-RXD    <--- Diese Verbingungen ist neu!!
+  10: RS232-TXD    <---   "     "     "      "   " 
+
+- VIAs unter dem Beschleunigungssensor sind scheisse (kann zu kurzschlüssen mit dem pad unter dem chip führen..)
+- Kompensation vom 3037 scheint für geringe lasten irgendwie daneben.. (kleiner peak beim high-side-fet, vor dem einschalten) nochmal mit 'nem Scope nachmessen..
+- IC2 in thomas.kindler@gmx.de -- shit!
+- USB-Buchse hat zu kleine bohrlöcher..
+- LED's sind nicht gut sichtbar.. (mittig setzen..)
+- Spacing für PSD1/2/I2C entweder vergrössern, oder auf 2.54mm setzen.
+- Bestückungsdruck is zu klein.. und teilweise nich sichtbar. (VIAs!, Power-Conn)
+- evtl. statt gyro-ref noch ein vsense für Servo-Versorgung.
+- 12mil tracks (wo's geht).
+- 100/16 hinter Vcc-Regler zu gross (--> 22u laut datenblatt)
+- Kleineren 3.3V-Regler nehmen (IRU 1010-33CY im SOT-223-Gehäuse)
+- 0603-SMD-Teile gehen auch!
+- Kleinere Dioden verwenden! ('nen SMD-Brückengleichrichter müsste auch gehen!)
+- Power-Schalter über schaltregler-shutdown
+- 10A Sicherung, falls der Schaltregler-Takt mal ausfallen sollte, bzw. für den Kurzschlussfall.
